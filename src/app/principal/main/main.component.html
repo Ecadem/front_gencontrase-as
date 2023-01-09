@@ -1,0 +1,54 @@
+
+<mat-toolbar color="warn">
+    <span>Generador de Contraseñas</span>
+    <span class="example-spacer"></span>
+    <a href="https://www.linkedin.com/in/eduardovparga/" target="_blank">
+        <button mat-icon-button>
+            <mat-icon aria-hidden="false" 
+                      fontIcon="linkedin"
+            ></mat-icon>
+        </button>
+    </a>        
+</mat-toolbar>
+
+<div class="container">
+    
+    <div class="row mt-3 mb-3">
+        <div class="col-10">
+            <input class="form-control"
+                   type="text"
+                   placeholder = "Introduce una frase..."
+                   #txtBuscar
+                   (keyup.enter)="generar()"
+            >
+        </div>
+        <div class="col-2">
+            <button mat-raised-button 
+                    color="warn"
+                    (click)="generar()"        
+            >
+                Generar
+            </button>
+        </div>    
+    </div>
+
+    <div *ngIf="resultados.length > 0">
+
+        <div class="d-flex justify-content-center">
+            <h3>
+                <strong>
+                    Sugerencias
+                </strong> 
+            </h3>
+        </div>
+        <div class="row d-flex justify-content-center mt-1"
+             *ngFor="let pass of resultados"
+        >
+            <div class="col-1">
+                 {{ pass[0] }}
+            </div>
+        </div>
+    </div>
+
+
+</div>
