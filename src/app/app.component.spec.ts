@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'front_gencontrasenas'`, () => {
+  it(`should have as title 'ToolsTemplate'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('front_gencontrasenas');
+    expect(app.title).toEqual('ToolsTemplate');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('front_gencontrasenas app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ToolsTemplate app is running!');
   });
 });

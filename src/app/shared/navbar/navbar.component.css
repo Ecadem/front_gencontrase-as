@@ -1,0 +1,38 @@
+::ng-deep .p-toolbar.toolbarS {
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 5px;
+    border: #fff;
+}
+
+
+.toolbar__logo-container {
+    max-width: 100px;
+}
+  
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .toolbar__logo-container {
+        max-width: 100px;
+    }
+
+    ::ng-deep .p-toolbar.toolbarS {
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 5px;
+        border: #fff;
+        justify-content: start !important;
+
+    }
+
+    ::ng-deep .p-tieredmenu-overlay {
+        position: fixed !important;
+    }
+    
+}
+  
