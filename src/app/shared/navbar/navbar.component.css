@@ -7,7 +7,7 @@
 
 
 .toolbar__logo-container {
-    max-width: 100px;
+    max-width: 150px;
 }
   
 img {
@@ -15,6 +15,20 @@ img {
     height: auto;
 }
 
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pi {
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration:none;
+    color: inherit;
+}
+  
+  
 
 @media (max-width: 768px) {
     .toolbar__logo-container {
@@ -26,13 +40,14 @@ img {
         background-color: #ffffff;
         padding: 5px;
         border: #fff;
-        justify-content: start !important;
 
     }
 
-    ::ng-deep .p-tieredmenu-overlay {
-        position: fixed !important;
+    .pi {
+        font-size: 25px;
+        margin-right: 8px;
     }
+
     
 }
   
