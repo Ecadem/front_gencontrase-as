@@ -16,7 +16,7 @@ export class GenpassService {
     const params = new HttpParams()
     .set( 'pwd', query )
 
-    return this.http.post<any[]>(`${ this.servicioUrl }/generate_pass?pwd=${ query }`, "");
+    return this.http.post<any>(`${ this.servicioUrl }/generate_pass?pwd=${ query }`, "");
     
     
 

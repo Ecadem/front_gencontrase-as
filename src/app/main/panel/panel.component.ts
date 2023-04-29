@@ -38,12 +38,12 @@ export class PanelComponent implements OnInit {
 
     this.genpassService.genPass( valor ) 
       .subscribe( ( resp ) => {
-        this.resultados = resp;
+        
+        console.log(resp.data);
+        this.resultados = resp.data;
         this.isLoading = false
 
       })
-    
-
   }
 
   copyPass(pass: string, ind: number) {
